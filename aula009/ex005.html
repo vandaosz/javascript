@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos DOM</title>
+    <style>
+        body{
+            background-color: rgb(10, 6, 240);
+            font: 17pt Arial;
+        }
+        div1{
+            line-break: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando no DOM</h1>
+    <h2 id='paragrafo 2'>Titulo secundário</h2>
+    <p class="paragrafo 3">Paragrafo número 1</p>
+    <p id="paragrafo4">Paragrafo novo</p>
+    <p class="paragrafo5">Aprendendo a usar o <strong>Dom</strong> em Javascript.</p>
+    <div class="div1">Clique em mim</div><br/>
+    <div class="div1">Apresentação dos dados</div>
+    <script>
+var t1 = window.document.getElementsByTagName('h1')[0]
+t1.style.color = 'blue'
+t1.style.backgroundColor = 'black'
+var t2 = window.document.getElementById('paragrafo 2')
+t2.style.color = 'blue'
+t2.style.backgroundColor = 'black'
+var t3 = window.document.getElementsByClassName('paragrafo 3')[0]
+t3.style.color = 'blue'
+t3.style.backgroundColor = 'black'
+var t4 = window.document.querySelector('p#paragrafo4')
+t4.style.color = 'blue'
+t4.style.backgroundColor = 'black'
+var t5 = window.document.querySelector('p.paragrafo5')
+t5.style.color = 'blue'
+t5.style.backgroundColor = 'black'
+var t6 = window.document.getElementsByTagName('div')[0]
+t6.style.color = 'blue'
+t6.style.backgroundColor = 'black'
+var t7 = window.document.getElementsByClassName('div1')[1]
+t7.style.color = 'blue'
+t7.style.backgroundColor = 'black'
+window.document.write(t4.innerHTML)
+
+
+        
+     </script>
+</body>
+</html>

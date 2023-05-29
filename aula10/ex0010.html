@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+</head>
+<style>
+    
+    input{
+        font: 20pt Arial;
+        width: 100px;
+        color: rgb(255, 18, 18);
+        
+    }
+    div{
+        margin-top: 15px;
+    }
+    input#button1{
+        width: 110px;
+    }
+    input#button2{
+        width: 138px;
+    }
+    body{
+        font: 15pt Arial;
+        background-color: gold;
+    }
+    input#button3{
+        width: 105px;
+    }
+
+</style>
+<body>
+    <h1>Somando valores</h1>
+<input type="number" name="txtn1" id="txtn1">  +
+<input type="number" name="txtn2" id="txtn2">
+<input type="button" value="Somar" onclick="Somar()">
+<div id="res">Resultado</div> <br/>
+
+<h1>Subtraindo valores</h1>
+<input type="number" name="cx1" id="cx1"> -
+<input type="number" name="cx2" id="cx2">
+<input id="button1" type="button" value="Subtrair" onclick="Subtrair()">
+<div id="res1">Resultado</div> <br/>
+
+<h1>Multiplicando valores</h1>
+<input type="number" name="mult1" id="mult1"> x
+<input type="number" name="mult2" id="mult2">
+<input id="button2" type="button" value="Multiplicar" onclick="Multiplicar()">
+<div id="resul">Resultado</div><br/>
+
+<h1>Dividindo valores</h1>
+<input type="number" name="divi1" id="divi1"> /
+<input type="number" name="divi2" id="divi2">
+<input id="button3" type="button" value="Divisão" onclick="Dividir()">
+<div id="rdivi">Resultado</div>
+
+
+
+
+<script>
+function Somar(){
+        var tn1 = window.document.getElementById('txtn1')
+        var tn2 = window.document.getElementById('txtn2')
+        var res = window.document.getElementById('res')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var s = n1 + n2
+        res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong> ${s} </strong><br/>`
+    }
+    function Subtrair(){
+        var a = window.document.getElementById('cx1')
+        var b = window.document.getElementById('cx2')
+        var res1 = window.document.getElementById('res1')
+        var aa = Number(a.value)
+        var bb = Number(b.value)
+        var sub = aa - bb
+        res1.innerHTML = `A subtração entre ${aa} e ${bb} é igual a <strong> ${sub} </strong>`
+
+    }
+    var c = window.document.getElementById('button1')
+    function Multiplicar(){
+        var x = window.document.getElementById('mult1')
+        var y = window.document.getElementById('mult2')
+        res2 = window.document.getElementById('resul')
+        xx = Number(x.value)
+        yy = Number(y.value)
+        mul = xx * yy
+        res2.innerHTML = `A multiplicação entre ${xx} e ${yy} é igual a ${mul}`
+    }
+    function Dividir(){
+        var A = window.document.getElementById('divi1')
+        var B = window.document.getElementById('divi2')
+        var AA = Number(A.value)
+        var BB = Number(B.value)
+        var res3 = window.document.getElementById('rdivi')
+        var divisao = AA / BB
+        res3.innerHTML = `A divisão de ${AA} para ${BB} é igual a ${divisao}`
+    }
+    
+
+    
+</script>
+</body>
+</html>

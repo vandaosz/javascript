@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(204, 37, 31);
+    font: 20pt Arial;
+}
+input{
+    width: 200px;
+    height: 19px;
+    font: 12pt Arial;
+}
+input#procurar{
+height: 25px;
+}
+img{
+    align-tracks: center;
+    width: 500px;
+}
+header{
+    text-align: center;
+}
+p#mm{
+    text-align: center;
+}

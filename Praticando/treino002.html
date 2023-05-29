@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relembrando</title>
+</head>
+<style>
+    div#msg{
+        background-color: aqua;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div id="msg" onclick="Clicar()">Interaja...</div>
+    <script>
+function Clicar(){
+    var a = window.document.getElementById('msg')
+    a.style.backgroundColor = 'red'
+}
+    </script>
+    
+</body>
+</html>

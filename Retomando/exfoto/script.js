@@ -1,0 +1,5 @@
+let res = window.document.getElementById('res')
+let img = window.document.createElement('img')
+img.setAttribute('id', 'foto')
+img.setAttribute('src', 'fotomanha.png')
+res.appendChild(img)

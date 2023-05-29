@@ -1,0 +1,31 @@
+body{
+background-color: #9932cc;
+font: 20pt Arial;
+text-align: center;
+}
+
+header
+{
+color: white;
+text-align: center;
+}
+section{
+background-color: white;
+border-radius: 10px;
+padding: 15px;
+width: 500px;
+margin: auto;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.288);
+text-align: center;
+}
+
+footer{
+color: white;
+text-align: center;
+font-style: italic;
+text-align: center;
+}
+div{
+    text-align: center;
+    padding: 8px;
+}

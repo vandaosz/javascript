@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree</title>
+</head>
+<body><h1>Your nacionality</h1>
+    Type where you born <input type="text" name="country" id="country"> 
+    <input type="button" value="Search" onclick="Search()">
+    <div id="res"></div>
+    <script>
+        
+        function Search(){
+            var country1 = window.document.getElementById('country')
+            var res = window.document.getElementById('msg')
+            var cou = Number(country1.value)
+            var s = cou
+                res.innerHTML = (`${s}`)
+            }
+    </script>
+    
+</body>
+    
+</html>

@@ -1,0 +1,5 @@
+var img = window.document.createElement('img')
+var res = window.document.getElementById('res')
+img.setAttribute('id' , 'foto')
+img.setAttribute('src' , 'ft.jpeg')
+res.appendChild(img)
